@@ -1,9 +1,12 @@
 /**
- * Компонент для создания заголовка
- * @function Title
  * @typedef {Object} DataType
  * @property {string | number} priority
  * @property {string} content
+ */
+
+/**
+ * Компонент для создания заголовка
+ * @function Title
  * @param {DataType} data - данные для заголовка 
  * @param {string} className
  * @returns {string} - возвращаем строку HTML
