@@ -1,4 +1,4 @@
-const data = {
+export const data = {
   download: {
     name: 'download',
     title: {
@@ -11,8 +11,12 @@ const data = {
       description: 'Some description for image 1',
     },
     links: {
-      appleUrl: 'https://apple.com',
-      googleUrl: 'https://google.com',
+      apple: {
+        url: 'https://apple.com',
+      },
+      google: {
+        url: 'https://google.com',
+      },
     },
   },
 };
