@@ -18,6 +18,7 @@ describe('Title', () => {
 
     expect(result).toBe('<h2 class="test-class">Test Content</h2>');
   });
+  
   test('should return empty string when data is not provided', () => {
     const result = Title();
 
