@@ -10,14 +10,15 @@ import { BrandLink } from '../../ui/BrandLink/BrandLink.js';
  * @param {Data} data
  * @returns {string}
  */
+
 export const SectionPrimary = (data) => {
   const dataKeys = Object.keys(data);
-if (dataKeys.length !== 4 && dataKeys.length !== 5) return '';
+  if (dataKeys.length !== 4 && dataKeys.length !== 5) return '';
 
-const {name, title, texts, image, links} = data;
-const className = name 
-  ? name 
-  : 'section-primary';
+  const {name, title, texts, image, links} = data;
+  const className = name 
+    ? name 
+    : 'section-primary';
 
 return `
   <section class="${className }"> 
