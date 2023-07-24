@@ -7,10 +7,10 @@
  * @returns {string} - возвращаем строку HTML
  */
 
-export const Title = (title, parentClassName) => { 
+export const Title = ( title, parentClassName ) => { 
   if (Object.values(title).length !==2) return '';
   
-  const {priority, content} = title;
+  const { priority, content } = title;
   const currentClassName = parentClassName
     ? `${parentClassName}__title`
     : 'title';
