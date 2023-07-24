@@ -1,28 +1,26 @@
-/**
- * @typedef {Object} DataType
- * @property {string | number} priority
- * @property {string} content
- */
+/** @typedef {import('./types').Title} Title */
 
 /**
- * Компонент для создания заголовка
  * @function Title
- * @param {DataType} data - данные для заголовка 
- * @param {string} className
+ * @param {Title} title - данные для заголовка 
+ * @param {string} parentClassName
  * @returns {string} - возвращаем строку HTML
  */
 
-export const Title = (data, className) => { 
-  if (!data) return '';
+export const Title = ( title, parentClassName ) => { 
+  if (Object.values(title).length !==2) return '';
   
-  const {priority, content} = data;
+  const { priority, content } = title;
+  const currentClassName = parentClassName
+    ? `${parentClassName}__title`
+    : 'title';
     
   switch (priority) {
-    default: return `<h1 class="${className}">${content}</h1>`;
-    case 2: return `<h2 class="${className}">${content}</h2>`;
-    case 3: return `<h3 class="${className}">${content}</h3>`; 
-    case 4: return `<h4 class="${className}">${content}</h4>`;
-    case 5: return `<h5 class="${className}">${content}</h5>`; 
-    case 6: return `<h6 class="${className}">${content}</h6>`;
+    default: return `<h1 class="${currentClassName}">${content}</h1>`;
+    case 2: return `<h2 class="${currentClassName}">${content}</h2>`;
+    case 3: return `<h3 class="${currentClassName}">${content}</h3>`; 
+    case 4: return `<h4 class="${currentClassName}">${content}</h4>`;
+    case 5: return `<h5 class="${currentClassName}">${content}</h5>`; 
+    case 6: return `<h6 class="${currentClassName}">${content}</h6>`;
   }
 };
