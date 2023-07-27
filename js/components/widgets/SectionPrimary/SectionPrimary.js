@@ -1,10 +1,9 @@
-import { Title } from '../../ui/Title.js';
-import { Text } from '../../ui/Text/Text.js';
-import { Image } from '../../ui/Image/Image.js';
-import { BrandLink } from '../../ui/BrandLink/BrandLink.js';
-import { link } from 'fs';
+import { Title } from '../../../components/ui/Title/Title.js';
+import { Text } from '../../../components/ui/Text/Text.js';
+import { Image } from '../../../components/ui/Image/Image.js';
+import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
-/** @typedef {import ('../../../schema/types.js').SectionPrimary} Data */
+/** @typedef {import ('../../../schema/types').SectionPrimary} Data */
 
 /**
  * @function SectionPrimary
@@ -18,18 +17,18 @@ export const SectionPrimary = (data) => {
 
   const { name, title, texts, image, links } = data;
 
-  const { appleLink, googleLink } = links
+  const { apple, google } =links;
 
   const className = name 
     ? name 
     : 'section-primary';
 
-return `
-  <section class="${className }"> 
-    ${title ? Title(title, className) : ''}
-    ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
-    ${image ? Image(image, className) : ''}
-    ${links.length > 0 ? links.map((link) => BrandLink(link,className)).join('') : ''}
-  </section>
+  return `
+    <section class="${className }"> 
+      ${title ? Title(title, className) : ''}
+      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+      ${image ? Image(image, className) : ''}
+      ${links.length > 0 ? links.map((link) => BrandLink(link,className)).join('') : ''}
+    </section>
   `;
 };

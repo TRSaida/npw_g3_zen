@@ -12,7 +12,7 @@
  * @returns {string} html or empty
  */
 
-export const Brandlink = (link, className) => {
+export const BrandLink = (link, className) => {
   if (!link) return '';
   const { url, description } = link;
   return `

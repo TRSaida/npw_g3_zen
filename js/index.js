@@ -1,4 +1,4 @@
-import { data } from './src/data/data.js';
+import { data } from './data/data.js';
 import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
 
 const { download } = data;
