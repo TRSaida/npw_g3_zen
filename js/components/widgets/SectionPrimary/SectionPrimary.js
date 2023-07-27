@@ -3,7 +3,7 @@ import { Text } from '../../../components/ui/Text/Text.js';
 import { Image } from '../../../components/ui/Image/Image.js';
 import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
-/** @typedef {import ('../../../schema/types').SectionPrimary} Data */
+/** @typedef {import ('../../../schema/types.js').SectionPrimary} Data */
 
 /**
  * @function SectionPrimary
@@ -28,7 +28,8 @@ export const SectionPrimary = (data) => {
       ${title ? Title(title, className) : ''}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
-      ${links.length > 0 ? links.map((link) => BrandLink(link,className)).join('') : ''}
+      ${apple ? BrandLink(apple, 'apple', className) : ''}
+      ${google ? BrandLink(google, 'google', className) : ''}
     </section>
   `;
 };

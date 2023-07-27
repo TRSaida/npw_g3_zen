@@ -9,7 +9,6 @@ export interface Image {
 };
 
 export interface Link {
-  type: string;
   url: string;
 };
 
@@ -18,5 +17,8 @@ export interface SectionPrimary {
   title: Title;
   texts: string[];
   image: Image;
-  links?: Link[];
+  links?: {
+    apple: Link; 
+    google: Link;
+  };
 };
