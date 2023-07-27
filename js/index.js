@@ -1,5 +1,5 @@
-import { data } from './components/data.js';
-import { SectionPrimary } from './components/widgets/SPrimary/SectionPrimary.js';
+import { data } from './src/data/data.js';
+import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
 
 const { download } = data;
 
