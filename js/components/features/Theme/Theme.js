@@ -1,22 +1,26 @@
-import { Moon } from "./ui/Moon.js";
-import { Sun } from "./ui/Sun.js";
+import { Moon } from './ui/Moon.js';
+import { Sun } from './ui/Sun.js';
 
 /**
  * @function Theme
- * @param {'light' | 'dark'} theme
  * @param {string} parentClassName
+ * @param {'light' | 'dark'} theme
  * @returns {string}
  */
 
-export const Theme = (theme = 'light', parentClassName) => {
+export const Theme = ( parentClassName, theme = 'light') => {
 
   const currentClassname = parentClassName
     ? `${parentClassName}__theme`
     : 'theme';
 
 return `
-  <button class="${currentClassname}">
-   ${ theme=== 'light' ? Moon() : Sun() }
-  </button>
+<button 
+class="${currentClassname}"
+data-theme="light"
+id="theme"
+>
+ ${theme === 'light' ? Moon() : Sun()}
+</button>
 `;
 }
