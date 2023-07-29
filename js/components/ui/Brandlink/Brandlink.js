@@ -1,29 +1,29 @@
 /**
  * @typedef {object} Link - контент для ссылки
  * @property {string} url
- * @property {string} type
  */
 
 /**
  * Компонент для создания ссылки
  * @function Brandlink
  * @param {Link} link
+ * @param {'apple' | 'google'} type
  * @param {string} className
  * @returns {string} html or empty
  */
 
-export const Brandlink = (link, className) => {
+export const BrandLink = (link, type, className) => {
   if (!link) return '';
-  const { url, description } = link;
+  const { url } = link;
   return `
     <a
       href="${url}"
     >
-     ${type === 'apple' && IconApple()}
-     ${type === 'google' && IconGoogle()}
+     ${type === 'apple' && 'IconApple'}
+     ${type === 'google' && 'IconGoogle'}
      or
-     ${type === 'apple' ? IconApple() :
-      IconGoogle()}
+     ${type === 'apple' ? 'IconApple' :
+      'IconGoogle'}
      </a>
    `; 
  };
