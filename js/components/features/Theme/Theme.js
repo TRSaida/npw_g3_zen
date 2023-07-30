@@ -14,13 +14,13 @@ export const Theme = ( parentClassName, theme = 'light') => {
     ? `${parentClassName}__theme`
     : 'theme';
 
-return `
-<button 
-class="${currentClassname}"
-data-theme="light"
-id="theme"
->
- ${theme === 'light' ? Moon() : Sun()}
-</button>
-`;
-}
+  return `
+    <button 
+     class="${currentClassname}"
+     data-theme="light"
+     id="theme"
+    >
+       ${theme === 'light' ? Moon() : Sun()}
+    </button>
+  `;
+};
