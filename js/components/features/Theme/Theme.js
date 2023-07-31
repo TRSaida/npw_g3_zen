@@ -15,10 +15,10 @@ export const Theme = ( parentClassName, theme = 'light') => {
     : 'theme';
 
   return `
-   <button 
-     class="${currentClassname}"
-     data-theme="light"
-     id="theme"
+    <button 
+      class="${currentClassname}"
+      theme="light"
+      id="theme"
     >
       ${theme === 'light' ? Moon() : Sun()}
     </button>
