@@ -8,7 +8,7 @@ import { Sun } from './ui/Sun.js';
  * @returns {string}
  */
 
-export const Theme = ( parentClassName, theme = 'light') => {
+export const Theme = (parentClassName, theme = 'light') => {
 
   const currentClassname = parentClassName
     ? `${parentClassName}__theme`
@@ -17,7 +17,7 @@ export const Theme = ( parentClassName, theme = 'light') => {
   return `
     <button 
       class="${currentClassname}"
-      theme="light"
+      data-theme="${theme}"
       id="theme"
     >
       ${theme === 'light' ? Moon() : Sun()}
