@@ -1,4 +1,4 @@
-import { IconLogo } from './ui/Icon_Logo.js';
+import { IconLogo } from './ui/IconLogo.js';
 
 /**
  * @function Logo
@@ -12,8 +12,8 @@ export const Logo = (parentClassName) => {
     : 'logo';
 
   return `
-   <button class="${currrentClassName}" id="logo">
-      ${IconLogo()}
-   </button>
+    <button class="${currrentClassName}" id="logo">
+     ${IconLogo()}
+    </button>
   `;
 };
