@@ -7,13 +7,13 @@ import { IconLogo } from './ui/IconLogo.js';
  */
 
 export const Logo = (parentClassName) => {
-  const currentClassname = parentClassName
+  const currentClassName = parentClassName
     ? `${parentClassName}__logo`
     : 'logo';
 
   return `
-    <button class="${currrentClassName}" id="logo">
-     ${IconLogo()}
+    <button class="${currentClassName}" id="logo">
+      ${IconLogo()}
     </button>
   `;
 };
