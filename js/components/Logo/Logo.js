@@ -1,20 +1,19 @@
-import { IconLogo } from './ui/Icon_logo.js';
+import { IconLogo } from './ui/Icon_Logo.js';
 
 /**
  * @function Logo
  * @param {string} parentClassName 
- * @param {string} logo 
  * @returns {string}
  */
 
-export const Logo = (parentClassName, logo) => {
+export const Logo = (parentClassName) => {
   const currentClassname = parentClassName
     ? `${parentClassName}__logo`
     : 'logo';
 
   return `
-     <button class="${currrentClassName}" id="logo">
-       ${logo === 'logo' ? IconLogo() : ''}
-     </button>
+   <button class="${currrentClassName}" id="logo">
+      ${IconLogo()}
+   </button>
   `;
 };
