@@ -1,4 +1,4 @@
-import { IconBurger } from './ui/IconBurger';
+import { IconBurger } from './ui/IconBurger.js';
 
 /**
  * @function Burger
