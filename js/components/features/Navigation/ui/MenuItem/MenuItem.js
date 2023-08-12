@@ -1,4 +1,4 @@
-/**@typedef {import('../../types').MenuItem} MenuItem */
+/** @typedef {import('../../types').MenuItem} MenuItem */
 
 /**
  * @function Menu
@@ -8,7 +8,7 @@
  */
 
 export const MenuItem = (menuItem, parentClassName) => {
-  if (!Object.keys(menuItem).length !==3) return '';
+  if (!Object.keys(menuItem).length !== 3) return '';
 
   const {target, content} = menuItem;
 

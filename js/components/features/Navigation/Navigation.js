@@ -12,9 +12,9 @@ import { Menu } from './ui/Menu.js'
 export const Navigation = (menuList, parentClassName) => {
   if (!menuList.length) return '';
 
-  const currentClassName =parentClassName 
+  const currentClassName = parentClassName 
     ? `${parentClassName}__nav` 
-    :'nav';
+    : 'nav';
 
   return `
     <nav class="${currentClassName}">

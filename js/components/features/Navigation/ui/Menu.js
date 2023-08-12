@@ -1,6 +1,6 @@
-import {MenuItem} from './MenuItem/MenuItem.js'
+import { MenuItem } from './MenuItem/MenuItem.js'
 
-/**@typedef {import('../types').MenuItem} MenuItem */
+/** @typedef {import('../types').MenuItem} MenuItem */
 
 /**
  * @function Menu
