@@ -15,9 +15,9 @@ export interface Link {
 export interface SectionPrimary {
   name: string;
   title: Title;
-  texts: string[];
+  text: string[];
   image: Image;
-  links?: {
+  link: {
     apple: Link; 
     google: Link;
   };

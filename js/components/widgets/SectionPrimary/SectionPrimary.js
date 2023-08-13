@@ -13,12 +13,12 @@ import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
 export const SectionPrimary = (data) => {
   const dataKeys = Object.keys(data);
-  if (dataKeys.length !== 4 && dataKeys.length !== 5) return '';
+  if (/*dataKeys.length !== 4 && */dataKeys.length !== 5) return '';
 
-  const { name, title, texts, image, links } = data;
+  const { name, title, text, image, link } = data;
 
-  const { apple, google } =links;
-
+  const { apple, google } =link;
+  
   const className = name 
     ? name 
     : 'section-primary';
@@ -26,7 +26,7 @@ export const SectionPrimary = (data) => {
   return `
     <section class="${className }"> 
       ${title ? Title(title, className) : ''}
-      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+      ${text.length > 0 ? text.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
       ${apple ? BrandLink(apple, 'apple', className) : ''}
       ${google ? BrandLink(google, 'google', className) : ''}
