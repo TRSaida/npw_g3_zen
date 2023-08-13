@@ -14,7 +14,7 @@ import { Theme } from '../Theme/Theme.js'
 
 export const Header = (data) => {
   const dataHeader = Object.keys(data);
-  if (dataHeader.length !== 3) return '';
+  if (dataHeader.length !== 5) return '';
 
   const { name, logo, menuItem, lang, burger, theme } = data;
 
