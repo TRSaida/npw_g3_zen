@@ -16,19 +16,19 @@ export const Header = (data) => {
   const dataHeader = Object.keys(data);
   if (dataHeader.length !== 5) return '';
 
-  const { name, logo, menuItem, lang, burger, theme } = data;
-
+  const { name, menuList, langs } = data;
+ 
   const parentClassName = name 
     ? name 
     : 'Header';
 
   return `
     <header class="${parentClassName}">
-      ${logo ? Logo(parentClassName) : ''}
-      ${menuItem ? Navigation(menuList, parentClassName) : ''}
-      ${lang ? Lang(parentClassName) : ''}
-      ${burger ? Burger(parentClassName) : ''}
-      ${theme ? Theme(theme, parentClassName) : ''}
+      ${Logo(parentClassName)}
+      ${menuList.length > 0 ? Navigation(menuList, parentClassName) : ''}
+      ${langs.length > 0 ? Lang(langs, parentClassName) : ''}
+      ${Burger(parentClassName)}
+      ${Theme(parentClassName)}
     </header>
   `;  
 };
