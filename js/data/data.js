@@ -56,7 +56,7 @@ export const data = {
         },
       },
       image: {
-        source: './../assets/img/2.jpg',
+        source: './assets/images/2.jpg',
         description: 'download__image',
       }
     },
@@ -71,7 +71,7 @@ export const data = {
         'When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.'
       ],
       image: {
-        source: './../assets/img/3.jpg',
+        source: './assets/images/3.jpg',
         description: 'warranty__img',
       },
     },
@@ -108,35 +108,35 @@ export const data = {
     },
     clients: [
       {
-        source:'./../assets/img/brands/brand1.jpg',
+        source:'./assets/clients/1.svg',
         description:'Rosegal'
       },
       {
-        source:'./../assets/img/brands/brand2.jpg',
+        source:'../assets/clients/2.svg',
         description:'Gearbest'
       },
       {
-        source:'./../assets/img/brands/brand3.jpg',
+        source:'./assets/clients/3.svg',
         description:'allegro'
       },
       {
-        source:'./../assets/img/brands/brand4.jpg',
+        source:'./assets/clients/4.svg',
         description:'AliExpress'
       },
       {
-        source:'./../assets/img/brands/brand5.jpg',
+        source:'./assets/clients/5.svg',
         description:'Booking'
       },
       {
-        source:'./../assets/img/brands/brand6.jpg',
+        source:'./assets/clients/6.svg',
         description:'MediaMarkt'
       },
       {
-        source:'./../assets/img/brands/brand7.jpg',
+        source:'./assets/clients/7.svg',
         description:'Rtv'
       },
       {
-        source:'./../assets/img/brands/brand8.jpg',
+        source:'./assets/clients/8.svg',
         description:'Groupon'
       },
     ],
@@ -215,7 +215,7 @@ export const data = {
           links: [
             {
               description: 'In',
-              sourse: './../../../src/img/footer__in.svg',
+              sourse: './assets/icon/1.svg',
             },
 
           ]
@@ -232,7 +232,7 @@ export const data = {
         },
       ],
       logo: {
-        source:'./../../img/footer__logo.svg',
+        source:'assets/icon/2.svg',
         description:'footerLogo'
       },
       text: [
@@ -244,7 +244,7 @@ export const data = {
         'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
       ],
       icon: {
-        source: './../../img/footer__icon.svg',
+        source: 'assets/icon/3.svg',
         description: 'footerIcon'
       }
     },
@@ -305,7 +305,7 @@ export const data = {
         },
       ],
       image: {
-        source: './../assets/img/2.jpg',
+        source: './assets/images/2.jpg',
         description: 'download__image',
       }
     },
@@ -319,7 +319,7 @@ export const data = {
         'При покупке любой электроники с помощью карты ZEN shopping Mastercard гарантия на них продлевается на один год. Как это работает? Это просто так. Автоматически.'
       ],
       image: {
-        source: './../assets/img/3.jpg',
+        source: './assets/images/3.jpg',
         description: 'warranty__img',
       },
     },
@@ -353,35 +353,35 @@ export const data = {
     },
     clients: [
       {
-        source:'./../assets/img/brands/brand1.jpg',
+        source:'./assets/clients/1.svg',
         description:'Rosegal'
       },
       {
-        source:'./../assets/img/brands/brand2.jpg',
+        source:'./assets/clients/2.svg',
         description:'Gearbest'
       },
       {
-        source:'./../assets/img/brands/brand3.jpg',
+        source:'./assets/clients/3.svg',
         description:'allegro'
       },
       {
-        source:'./../assets/img/brands/brand4.jpg',
+        source:'./assets/clients/4.svg',
         description:'AliExpress'
       },
       {
-        source:'./../assets/img/brands/brand5.jpg',
+        source:'./assets/clients/5.svg',
         description:'Booking'
       },
       {
-        source:'./../assets/img/brands/brand6.jpg',
+        source:'./assets/clients/6.svg',
         description:'MediaMarkt'
       },
       {
-        source:'./../assets/img/brands/brand7.jpg',
+        source:'./assets/clients/7.svg',
         description:'Rtv'
       },
       {
-        source:'./../assets/img/brands/brand8.jpg',
+        source:'./assets/clients/8.svg',
         description:'Groupon'
       },
     ],
@@ -460,7 +460,7 @@ export const data = {
           links: [
             {
               description: 'In',
-              sourse: './../../../src/img/footer__in.svg',
+              sourse: './assets/icon/1.svg',
             },
 
           ]
@@ -477,7 +477,7 @@ export const data = {
         },
       ],
       logo: {
-        source:'./../../img/footer__logo.svg',
+        source:'./assets/icon/2.svg',
         description:'footerLogo'
       },
       text: [
@@ -489,7 +489,7 @@ export const data = {
         'Офис продаж: ул. Эмили Плятер 53, 00-113 Варшава, Польша.',
       ],
       icon: {
-        source: './../../img/footer__icon.svg',
+        source: './assets/icon/3.svg',
         description: 'footerIcon'
       }
     },
