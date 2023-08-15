@@ -15,9 +15,9 @@ export const SectionPrimary = (data) => {
   const dataKeys = Object.keys(data);
   if (dataKeys.length !== 4 && dataKeys.length !== 5) return '';
 
-  const { name, title, texts, image, links } = data;
+  const { name, title, texts, image, link } = data;
 
-  const { apple, google } =links;
+  const { apple, google } =link;
 
   const className = name 
     ? name 
