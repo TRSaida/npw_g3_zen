@@ -17,7 +17,7 @@ export const SectionPrimary = (data) => {
 
   const { name, title, texts, image, link } = data;
 
-  const { apple, google } =link;
+  const { apple, google } = link;
 
   const className = name 
     ? name 

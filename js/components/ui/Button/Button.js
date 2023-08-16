@@ -15,16 +15,12 @@ export const Button = (button, parentClassName) => {
 
   const buttonCare = '';
 
-  switch (button.type) {
-    case 'icon':
-      buttonCare =IconButton(button, currentClassName);
-      break;
-    case  'forma':
-      buttonCare =FormaButton(button, currentClassName);
-      break;
-    default:
-      break;
-  };
+  if (button.type === 'icon') {
+    buttonCare = IconButton(button, currentClassName);
+  }
+  else if (button.type === 'forma') {
+    buttonCare = FormaButton(button, currentClassName);
+  }
 
   return `
     <button class="${currentClassName}">
