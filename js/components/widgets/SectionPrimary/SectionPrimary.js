@@ -23,13 +23,15 @@ export const SectionPrimary = (data) => {
     ? name 
     : 'section-primary';
 
-  return `
+    return `
     <section class="${className }"> 
       ${title ? Title(title, className) : ''}
       ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
       ${image ? Image(image, className) : ''}
       ${apple ? BrandLink(apple, 'apple', className) : ''}
       ${google ? BrandLink(google, 'google', className) : ''}
+      
     </section>
   `;
 };
+
