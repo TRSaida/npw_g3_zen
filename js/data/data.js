@@ -19,4 +19,38 @@ export const data = {
       },
     },
   },
+  clients: [
+    {
+      source:'../assets/clients/1.svg',
+      description:'Rosegal'
+    },
+    {
+      source:'../assets/clients/2.svg',
+      description:'Gearbest'
+    },
+    {
+      source:'../assets/clients/3.svg',
+      description:'allegro'
+    },
+    {
+      source:'../assets/clients/4.svg',
+      description:'AliExpress'
+    },
+    {
+      source:'../assets/clients/5.svg',
+      description:'Booking'
+    },
+    {
+      source:'../assets/clients/6.svg',
+      description:'MediaMarkt'
+    },
+    {
+      source:'../assets/clients/7.svg',
+      description:'Rtv'
+    },
+    {
+      source:'../assets/clients/8.svg',
+      description:'Groupon'
+    },
+  ]
 };
