@@ -21,9 +21,7 @@ export interface SectionPrimary {
   title: Title;
   texts: string[];
   image: Image;
- 16-widget-sectionsecondary
-   links: {
- main
+  links: {
     apple: Link; 
     google: Link;
   };

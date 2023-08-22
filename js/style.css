@@ -1,0 +1,178 @@
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+background-color: #333;
+color: #fff;
+padding: 10px 0;
+}
+
+.header__wrapper {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+
+.header__logo img {
+width: 50px;
+height: auto;
+}
+
+.header__nav .menu {
+list-style: none;
+display: flex;
+}
+
+.menu__item {
+margin-right: 20px;
+}
+
+.menu__item a {
+color: #fff;
+text-decoration: none;
+}
+
+.header__button {
+display: flex;
+align-items: center;
+}
+
+.header__lang {
+margin-right: 10px;
+}
+
+.header__theme img {
+width: 24px;
+height: auto;
+margin-right: 10px;
+}
+
+/* Section styles */
+.section {
+padding: 50px 0;
+}
+
+.section__wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.section__title {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.section__copy {
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* Image styles */
+.section__image {
+max-width: 100%;
+height: auto;
+margin-top: 20px;
+}
+
+/* Button styles */
+.button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+/* Footer styles */
+.footer {
+background-color: #f0f0f0;
+padding: 50px 0;
+}
+
+.footer__wrapper {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+padding: 0 20px;
+}
+
+.column {
+flex: 1;
+margin-right: 20px;
+}
+
+.column__title {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.column__list {
+list-style: none;
+padding: 0;
+}
+
+.column__item {
+margin-bottom: 5px;
+}
+
+.column__item a {
+color: #333;
+text-decoration: none;
+}
+
+.footer__logo img {
+width: 100px;
+height: auto;
+margin-bottom: 20px;
+}
+
+.footer__copy {
+font-size: 12px;
+color: #666;
+margin-top: 20px;
+}
+
+.footer_dev {
+margin-top: 20px;
+}
+
+.dev__img {
+width: 20px;
+height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+.header__nav .menu {
+  flex-direction: column;
+}
+
+.menu__item {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.section__image {
+  max-width: 80%;
+}
+
+.column {
+  flex: none;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+}

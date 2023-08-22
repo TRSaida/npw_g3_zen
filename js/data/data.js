@@ -37,8 +37,7 @@ export const data = {
       ],
       langs: ['en', 'ru'],
     },
-    26-create-header
-    download: {
+      download: {
       name: 'download',
       title: {
       priority: 1,
@@ -56,30 +55,6 @@ export const data = {
         google: {
           url: 'https://google.com',
         },
-    download:{
-      name: 'download',
-      title: {
-        content: 'Peaceful shopping mindful money',
-        priority: 1,
-      },
-      texts: [
-        'See how we can help with making your shopping experience and money management more ZEN.'
-      ],
-      link: {
-        apple:{
-          source:'https://www.apple.com',
-          description: 'apple__logo',
-        },
-        google:  {
-          source:'https://play.google.com/',
-          description: 'google__logo',
-        },
-      },
-      image: {
-        source: '../assets/images/1.jpg',
-        description: 'download__image',
-      }
-    },
     warranty: {
       name: 'warranty',
       title: {
@@ -241,7 +216,7 @@ export const data = {
           ]
         },
         {
-          title: 'Сщтефсеы',
+          title: 'Contact',
           links: [
             {
               content: 'hello@zen.com',
@@ -515,6 +490,4 @@ export const data = {
       }
     },
   },
-}
-
-  main
+ };
