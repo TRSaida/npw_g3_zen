@@ -4,13 +4,14 @@ import { Menu } from './ui/Menu.js'
 
 /**
  * @function Navigation
- * @param {MenuItem[]} menuList
+ * @param {MenuItem[]} menuItems
  * @param {string} parentClassName
  * @return {string}
  */
 
-export const Navigation = (menuList, parentClassName) => {
-  if (!menuList.length) return '';
+export const Navigation = (menuItems, parentClassName) => {
+  console.log({Navigation});
+  if (!menuItems.length) return '';
 
   const currentClassName = parentClassName 
     ? `${parentClassName}__nav` 
@@ -18,7 +19,7 @@ export const Navigation = (menuList, parentClassName) => {
 
   return `
     <nav class="${currentClassName}">
-      ${Menu(menuList, parentClassName)}
+      ${Menu(menuItems, parentClassName)}
     </nav>
   `;
 };

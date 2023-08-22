@@ -37,6 +37,25 @@ export const data = {
       ],
       langs: ['en', 'ru'],
     },
+    26-create-header
+    download: {
+      name: 'download',
+      title: {
+      priority: 1,
+      content: 'Peaceful shopping mindful money',
+      },
+      texts: ['See how we can help with making your shopping experience and money management more Zen'],
+      image: {
+        source: './assets/images/1.jpg',
+        description: 'Some description for image 1',
+      },
+      links: {
+        apple: {
+          url: 'https://apple.com',
+        },
+        google: {
+          url: 'https://google.com',
+        },
     download:{
       name: 'download',
       title: {
@@ -480,6 +499,7 @@ export const data = {
       logo: {
         source:'../assets/icon/2.svg',
         description:'footerLogo'
+ main
       },
       text: [
         'ZEN является лицензированным финансовым учреждением под надзором Центрального банка Литвы, одобренным Европейским банковским управлением для 31 страны.',

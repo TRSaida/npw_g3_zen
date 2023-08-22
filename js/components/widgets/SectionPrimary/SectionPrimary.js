@@ -3,7 +3,7 @@ import { Text } from '../../../components/ui/Text/Text.js';
 import { Image } from '../../../components/ui/Image/Image.js';
 import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
-/** @typedef {import ('../../../schema/types.js').SectionPrimary} Data */
+/** @typedef {import ('../../../schema/types').SectionPrimary} Data */
 
 /**
  * @function SectionPrimary
