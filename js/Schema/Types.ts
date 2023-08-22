@@ -12,13 +12,26 @@ export interface Link {
   url: string;
 };
 
+export interface Button {
+  conten: string;
+};
+
 export interface SectionPrimary {
   name: string;
   title: Title;
   texts: string[];
   image: Image;
-  links?: {
+ 16-widget-sectionsecondary
+   links: {
+ main
     apple: Link; 
     google: Link;
   };
+};
+
+export interface SectionSecondary {
+  name: string;
+  title: Title;
+  texts: string[];
+  button: Button;
 };
