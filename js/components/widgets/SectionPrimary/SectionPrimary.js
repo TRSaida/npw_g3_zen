@@ -13,6 +13,8 @@ import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
 export const SectionPrimary = (data) => {
   const dataKeys = Object.keys(data);
+ 16-widget-sectionsecondary
+
  
   if (dataKeys.length === 4 || dataKeys.length === 5) {
     const { name, title, texts, image, links } = data;
@@ -34,5 +36,6 @@ export const SectionPrimary = (data) => {
   }
   else {
     return '';
-  }
+  } main
 };
+
