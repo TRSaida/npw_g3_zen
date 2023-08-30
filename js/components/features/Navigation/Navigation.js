@@ -10,7 +10,6 @@ import { Menu } from './ui/Menu.js'
  */
 
 export const Navigation = (menuItems, parentClassName) => {
-  console.log({Navigation});
   if (!menuItems.length) return '';
 
   const currentClassName = parentClassName 

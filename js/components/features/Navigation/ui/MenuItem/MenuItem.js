@@ -10,7 +10,6 @@
 export const MenuItem = (menuItem, parentClassName) => {
   if (!Object.keys(menuItem).length === 4) return '';
   
-  console.log({MenuItem});
   const {target, content} = menuItem;
 
   const currentClassName = parentClassName
