@@ -1,5 +1,4 @@
- 16-widget-sectionsecondary
-export const data = {
+ export const data = {
   en: { 
     header: {
       name: 'header',
@@ -55,6 +54,8 @@ export const data = {
         google: {
           url: 'https://google.com',
         },
+      },
+    },
     warranty: {
       name: 'warranty',
       title: {
@@ -82,8 +83,9 @@ export const data = {
         'But, here comes ZEN Care: a free, built-in shopping protection.'
 
       ],
-      button: {
-        content: 'Order a consultation'
+      image: {
+        source: 'assets/images/3.jpg',
+        description: 'some description for image 3 ',
       }
     },
     cashback: {
@@ -328,15 +330,16 @@ export const data = {
         'До тех пор, пока что-то, что вы покупаете, не окажется неисправным, отсутствующим или совершенно неправильным товаром, вас ждут длительные процедуры возврата товара.',
         'Но c ZEN Care: бесплатная встроенная защита покупок.'
       ],
-      button: {
-        content: 'Заказать консультацию'
-      }
-    },
+      image: {
+        source: 'assets/images/3.jpg',
+        description: 'some description for image 3 ',
+      },
+      },
     cashback:{
       title: {
         content: 'и кэшбэк!',
         priority: 1,
-    },
+      },
     text: [
         'Это экономит немного денег, пока вы ходите по магазинам, но во многих случаях требуется целая вечность, чтобы получить что-то из этого.',
         'Мы подумали и сделали кэшбэк более удобным.',
@@ -474,8 +477,7 @@ export const data = {
       logo: {
         source:'../assets/icon/2.svg',
         description:'footerLogo'
- main
-      },
+       },
       text: [
         'ZEN является лицензированным финансовым учреждением под надзором Центрального банка Литвы, одобренным Европейским банковским управлением для 31 страны.',
         'Регистрационный номер компании 304749651, ИНН LT100011714916.',
@@ -491,3 +493,4 @@ export const data = {
     },
   },
  };
+

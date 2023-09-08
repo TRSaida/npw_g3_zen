@@ -13,7 +13,7 @@ export interface Link {
 };
 
 export interface Button {
-  conten: string;
+  content: string;
 };
 
 export interface SectionPrimary {

@@ -1,8 +1,8 @@
-import { Title } from '../../../components/ui/Title/Title.js';
-import { Text } from '../../../components/ui/Text/Text.js';
+import { Title } from '../../ui/Title/Title.js';
+import { Text } from '../../ui/Text/Text.js';
 import { Button } from '../../ui/Button/Button.js'
 
-/** @typedef {import ('../../../schema/types').SectionSecondary} Data */
+/** @typedef {import ('./types').SectionSecondary} Data */
 
 /**
  * @function SectionSecondary
@@ -11,11 +11,11 @@ import { Button } from '../../ui/Button/Button.js'
  */
 
 export const SectionSecondary = (data) => {
-  const secondaryKeys = Object.keys(data);
-  if (secondaryKeys.length !== 4) return '';
-
+  const dataKeys = Object.keys(data);
+  if (dataKeys.length !== 4) return '';
+  
   const { name, title, texts, button } = data;
-
+  
   const parentClassName = name 
     ? name 
     : 'section-secondary';
@@ -27,4 +27,4 @@ export const SectionSecondary = (data) => {
       ${button ? Button(button, parentClassName) : ''}
     </section>
   `;
-};
+ };

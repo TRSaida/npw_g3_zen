@@ -1,29 +1,24 @@
-import { Links } from './Links/Links.js';
+import { Clients } from './Links/Clients.js';
 
 /** @typedef {import  ( './types').SectionTretiory} Data */
 
 /**
  * @function SectionTretiory
- * @param {Data[]} data
+ * @param {Data} data
  * @param {string} className
  * @returns {string}
  */
 
 export const SectionTretiory = (data, className) => {
-  const html = `
-  <section class="${className}"> 
-    <ul class="${className}">
-  `;
+  if (!data) return '';
+  const parentClassName = className
+    ? className 
+    : 'SectionTretiory';
 
-   data.forEach(dataLink => {
-    const { links } = dataLink;
-    html += `
-      ${Links(links, className)}
-    `;
-  });
-    html += `
-    </ul>
-  </section>
+  return `
+    <section class="${className}"> 
+      ${data.length > 0 ? Clients(data, parentClassName) : ''}
+    </section>
   `;
-    return html;  
-  };
+};
+  

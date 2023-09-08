@@ -1,7 +1,7 @@
-import { Title } from '../../../components/ui/Title/Title.js';
-import { Text } from '../../../components/ui/Text/Text.js';
-import { Image } from '../../../components/ui/Image/Image.js';
-import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
+import { Title } from '../../ui/Title/Title.js';
+import { Text } from '../../ui/Text/Text.js';
+import { Image } from '../../ui/Image/Image.js';
+import { BrandLink } from '../../ui/Brandlink/Brandlink.js';
 
 /** @typedef {import ('../../../schema/types').SectionPrimary} Data */
 
@@ -13,9 +13,6 @@ import { BrandLink } from '../../../components/ui/Brandlink/Brandlink.js';
 
 export const SectionPrimary = (data) => {
   const dataKeys = Object.keys(data);
- 16-widget-sectionsecondary
-
- 
   if (dataKeys.length === 4 || dataKeys.length === 5) {
     const { name, title, texts, image, links } = data;
     const { apple, google } = links || {};
@@ -36,6 +33,6 @@ export const SectionPrimary = (data) => {
   }
   else {
     return '';
-  } main
+  } 
 };
 

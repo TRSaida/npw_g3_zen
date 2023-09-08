@@ -1,4 +1,3 @@
-import { IconButton } from './IconButton.js'
 import { FormaButton } from './FormaButton.js'
 
 /**
@@ -9,22 +8,15 @@ import { FormaButton } from './FormaButton.js'
  */
 
 export const Button = (button, parentClassName) => {
+  if (!button) return '';
+ 
   const currentClassName = parentClassName
     ? `${parentClassName}__button`
     : 'button';
 
-  const buttonCare = '';
-
-  if (button.type === 'icon') {
-    buttonCare = IconButton(button, currentClassName);
-  }
-  else if (button.type === 'forma') {
-    buttonCare = FormaButton(button, currentClassName);
-  }
-
-  return `
+   return `
     <button class="${currentClassName}">
-      ${buttonCare}
+      ${FormaButton()}
     </button>
   `;
 };
