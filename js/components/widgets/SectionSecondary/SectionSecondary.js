@@ -1,6 +1,8 @@
-import { Title } from '../../ui/Title/Title.js';
-import { Text } from '../../ui/Text/Text.js';
-import { Button } from '../../ui/Button/Button.js'
+import { 
+  Title,
+  Text,
+  Button, 
+} from './index.js';
 
 /** @typedef {import ('./types').SectionSecondary} Data */
 

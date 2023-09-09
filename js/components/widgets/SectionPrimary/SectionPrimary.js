@@ -1,7 +1,9 @@
-import { Title } from '../../ui/Title/Title.js';
-import { Text } from '../../ui/Text/Text.js';
-import { Image } from '../../ui/Image/Image.js';
-import { BrandLink } from '../../ui/Brandlink/Brandlink.js';
+import { 
+  Title,
+  Text,
+  Image,
+  BrandLink, 
+} from './index.js';
 
 /** @typedef {import ('../../../schema/types').SectionPrimary} Data */
 
